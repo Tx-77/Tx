@@ -1,10 +1,14 @@
-
 public class App implements R{
 
 	public static void main(String[] args) {
 		System.out.println(R.boy_filePath);
 		System.out.println(R.girl_filePath);
-		System.out.println(R.array2d[0][1]);
-	}
 
+		for (int i = 0; i < array2d.length; i++) {
+			for (int j = 0; j < array2d[0].length; j++) {
+				System.out.print(array2d[i][j]+" ");
+			}
+			System.out.println();
+		}
+	}
 }
